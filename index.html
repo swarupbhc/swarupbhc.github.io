@@ -22,6 +22,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>I'm Swarup</title>
   <!-- Meta End -->
+  <script>
+    window.onload = function() {
+      // Get the current year
+      var currentYear = new Date().getFullYear();
+      
+      // Calculate the base number based on the current year
+      var baseNumber = 4 + (currentYear - 2023); // Assuming the starting year is 2023
+      
+      // Update the content of the <p> element
+      var pElement = document.getElementById("dynamicExpression");
+      pElement.innerHTML = baseNumber + "<sup>y</sup>";
+    };
+  </script>
 </head>
 
 <body style="background-color:#f4f5ff;">
@@ -68,16 +81,14 @@
           <p class="h6 m-1">
             Experience
           </p>
-          <p class="h1">
-            4<sup>y</sup>
-          </p>
+          <p class="h1" id="dynamicExpression"></p>
         </div>
         <div class="col-4 text-center">
           <p class="h6 m-1">
             Projects
           </p>
           <p class="h1">
-            6
+            9+
           </p>
         </div>
       </div>
