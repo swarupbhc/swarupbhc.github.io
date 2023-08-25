@@ -19,7 +19,25 @@
   <!-- Meta Start -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="language" content="en">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Swarup Bhanja Chowdhury, Senior Software Engineer, Flutter & Nest JS Developer. Kolkata, India">
+  <meta name="keywords" content="Software Engineer, Flutter Developer, Nest JS Developer, Swarup, Swarup Bhanja, Swarup Bhanja Chowdhury, Software Engineer Kolkata, Software Developer Kolkata, Flutter Developer Kolkata">
+  <meta name="author" content="Swarup Bhanja Chowdhury">
+
+  <meta property="og:title" content="Swarup Bhanja Chowdhury">
+  <meta property="og:description" content="Senior Software Engineer. Kolkata, India">
+  <meta property="og:image" content="https://swarup.dev/res/profile.jpg">
+  <meta property="og:url" content="https://swarup.dev">
+
+  <meta name="geo.region" content="IN">
+  <meta name="geo.placename" content="Kolkata, West Bengal">
+  <meta name="geo.position" content="22.5500;88.3333">
+
+
+
+
+
   <title>I'm Swarup</title>
   <!-- Meta End -->
   <script>
@@ -30,21 +48,17 @@
       // Calculate the base number based on the current year
       var baseNumber = 4 + (currentYear - 2023); // Assuming the starting year is 2023
       
-      // Update the content of the <p> element
-      var pElement = document.getElementById("dynamicExpression");
-      pElement.innerHTML = baseNumber + "<sup>y</sup>";
+      // Update the content of the <p> element for experience
+      var experienceElement = document.getElementById("dynamicExpression");
+      experienceElement.innerHTML = baseNumber + "<sup>y</sup>";
+  
+      // Calculate the dynamic number based on the current year
+      var dynamicNumber = Math.min(9 + (2 * (currentYear - 2023)), 99); // Assuming the starting year is 2023
+      
+      // Update the content of the <p> element for projects
+      var projectsElement = document.getElementById("dynamicNumber");
+      projectsElement.innerHTML = dynamicNumber;
     };
-    window.onload = function() {
-    // Get the current year
-    var currentYear = new Date().getFullYear();
-    
-    // Calculate the dynamic number based on the current year
-    var dynamicNumber = Math.min(9 + (2 * (currentYear - 2023)), 99); // Assuming the starting year is 2023
-    
-    // Update the content of the <p> element
-    var pElement = document.getElementById("dynamicNumber");
-    pElement.innerHTML = dynamicNumber;
-  };
   </script>
 </head>
 
