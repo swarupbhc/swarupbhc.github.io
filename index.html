@@ -34,6 +34,17 @@
       var pElement = document.getElementById("dynamicExpression");
       pElement.innerHTML = baseNumber + "<sup>y</sup>";
     };
+    window.onload = function() {
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+    
+    // Calculate the dynamic number based on the current year
+    var dynamicNumber = Math.min(9 + (2 * (currentYear - 2023)), 99); // Assuming the starting year is 2023
+    
+    // Update the content of the <p> element
+    var pElement = document.getElementById("dynamicNumber");
+    pElement.innerHTML = dynamicNumber;
+  };
   </script>
 </head>
 
@@ -73,8 +84,8 @@
           <p class="h6 m-1">
             Location
           </p>
-          <p class="h1">
-            IN
+          <p class="h2">
+            India
           </p>
         </div>
         <div class="col-4 text-center border-start border-end">
@@ -87,9 +98,7 @@
           <p class="h6 m-1">
             Projects
           </p>
-          <p class="h1">
-            9+
-          </p>
+          <p class="h1" id="dynamicNumber"></p>
         </div>
       </div>
       <div class="row">
